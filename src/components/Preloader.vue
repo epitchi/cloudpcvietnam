@@ -14,12 +14,14 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const isLoading = ref(true)
+// const isLoading = ref(true)
 
 onMounted(() => {
   window.addEventListener('load', () => {
-    isLoading.value = false
+    // isLoading.value = false
   })
+
+  // isLoading.value = true
 })
 </script>
 
