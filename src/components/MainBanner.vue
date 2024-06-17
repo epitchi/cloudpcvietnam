@@ -16,5 +16,7 @@
   
   <style scoped>
   @import url('../assets/css/templatemo-cyborg-gaming.css');
+  @import "../assets/vendor/bootstrap/css/bootstrap.min.css";
+  
   </style>
   
