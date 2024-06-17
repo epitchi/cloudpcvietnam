@@ -8,7 +8,7 @@
           <div class="row">
             <div class="col-lg-3 col-sm-6" v-for="game in games" :key="game.title">
               <div class="item">
-                <img :src="game.image" alt="" />
+                <img src="../assets/images/popular-01.jpg" alt="logo" />
                 <h4>{{ game.title }}<br /><span>{{ game.genre }}</span></h4>
                 <ul>
                   <li><i class="fa fa-star"></i> 4.8</li>
@@ -26,17 +26,21 @@
       </div>
     </div>
   </template>
+<script>
+  export default {
+  }
+</script>
   
   <script setup>
   const games = [
-    { image: '@/assets/images/popular-01.jpg', title: 'Fortnite', genre: 'Sandbox' },
-    { image: '@/assets/images/popular-02.jpg', title: 'PubG', genre: 'Battle S' },
-    { image: '@/assets/images/popular-03.jpg', title: 'Dota2', genre: 'Steam-X' },
-    { image: '@/assets/images/popular-04.jpg', title: 'CS-GO', genre: 'Legendary' },
-    { image: '@/assets/images/popular-05.jpg', title: 'Mini Craft', genre: 'Legendary' },
-    { image: '@/assets/images/popular-06.jpg', title: 'Eagles Fly', genre: 'Matrix Games' },
-    { image: '@/assets/images/popular-07.jpg', title: 'Warface', genre: 'Max 3D' },
-    { image: '@/assets/images/popular-08.jpg', title: 'Warcraft', genre: 'Legend' },
+    { image: "../assets/images/popular-01.jpg", title: 'Fortnite', genre: 'Sandbox' },
+    { image: '../assets/images/popular-02.jpg', title: 'PubG', genre: 'Battle S' },
+    { image: '../assets/images/popular-03.jpg', title: 'Dota2', genre: 'Steam-X' },
+    { image: '../assets/images/popular-04.jpg', title: 'CS-GO', genre: 'Legendary' },
+    { image: '../assets/images/popular-05.jpg', title: 'Mini Craft', genre: 'Legendary' },
+    { image: '../assets/images/popular-06.jpg', title: 'Eagles Fly', genre: 'Matrix Games' },
+    { image: '../assets/images/popular-07.jpg', title: 'Warface', genre: 'Max 3D' },
+    { image: '../assets/images/popular-08.jpg', title: 'Warcraft', genre: 'Legend' },
   ];
   </script>
   

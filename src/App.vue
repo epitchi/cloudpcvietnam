@@ -3,9 +3,17 @@
     <Preloader />
     <Header />
     <main>
-      <MainBanner />
-      <MostPopular />
-      <GamingLibrary />
+      <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="page-content">
+                <MainBanner />
+                <MostPopular />
+                <GamingLibrary />
+              </div>
+          </div>
+      </div>
+    </div>
     </main>
     <Footer />
   </div>
@@ -20,10 +28,10 @@ import GamingLibrary from './components/GamingLibrary.vue'
 import Footer from './components/Footer.vue'
 import "./assets/vendor/bootstrap/css/bootstrap.min.css";
 import "./assets/css/fontawesome.css";
-import "./assets/css/templatemo-cyborg-gaming.css";
 import "./assets/css/owl.css";
 import "./assets/css/animate.css";
 import "../node_modules/swiper/swiper-bundle.min.css";
+import "./assets/css/templatemo-cyborg-gaming.css";
 
 </script>
 

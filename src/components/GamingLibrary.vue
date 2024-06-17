@@ -6,7 +6,7 @@
         </div>
         <div class="item" v-for="game in games" :key="game.title">
           <ul>
-            <li><img :src="game.image" alt="" class="templatemo-item" /></li>
+            <li><img src="../assets/images/popular-01.jpg" alt="" class="templatemo-item" /></li>
             <li><h4>{{ game.title }}</h4><span>{{ game.genre }}</span></li>
             <li><h4>Date Added</h4><span>{{ game.dateAdded }}</span></li>
             <li><h4>Hours Played</h4><span>{{ game.hoursPlayed }}</span></li>

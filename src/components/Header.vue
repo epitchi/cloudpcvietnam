@@ -43,11 +43,9 @@ const handleKeypress = (event) => {
 </script>
 
 <style scoped>
-@import "../assets/css/templatemo-cyborg-gaming.css";
 @import "../assets/css/fontawesome.css";
 @import "../assets/css/owl.css";
 @import "../assets/css/animate.css";
-@import "../assets/vendor/bootstrap/css/bootstrap.min.css";
 
 
 /* Additional styles if needed */
