@@ -4,7 +4,7 @@ import Browse from './views/Browse.vue';
 import Profile from './views/Profile.vue';
 import App from './App.vue';
 import Login from './components/Login.vue';
-import { pb } from './backend/createClient';
+import { pb } from './backend/createClient.ts';
 // import Browse from './views/Browse.vue';
 // import Details from './views/Details.vue';
 // import Streams from './views/Streams.vue';

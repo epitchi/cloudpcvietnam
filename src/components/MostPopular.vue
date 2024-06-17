@@ -6,10 +6,10 @@
             <h4><em>Các tựa game</em> hỗ trợ </h4>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-sm-6" v-for="game in games" :key="game.title">
+            <div class="col-lg-4 col-sm-6" v-for="store in stores" :key="store.id">
               <div class="item">
-                <img src="../assets/images/popular-01.jpg" alt="logo" />
-                <h4>{{ game.title }}<br /><span>{{ game.genre }}</span></h4>
+                <img :src="store.logo" alt="logo" />
+                <h4>{{ store.name }}<br /><span>{{ store.publisher }}</span></h4>
                 <ul>
                   <li><i class="fa fa-star"></i> 4.8</li>
                   <li><i class="fa fa-download"></i> 2.3M</li>
@@ -32,16 +32,32 @@
 </script>
   
   <script setup>
-  const games = [
-    { image: "../assets/images/popular-01.jpg", title: 'Fortnite', genre: 'Sandbox' },
-    { image: '../assets/images/popular-02.jpg', title: 'PubG', genre: 'Battle S' },
-    { image: '../assets/images/popular-03.jpg', title: 'Dota2', genre: 'Steam-X' },
-    { image: '../assets/images/popular-04.jpg', title: 'CS-GO', genre: 'Legendary' },
-    { image: '../assets/images/popular-05.jpg', title: 'Mini Craft', genre: 'Legendary' },
-    { image: '../assets/images/popular-06.jpg', title: 'Eagles Fly', genre: 'Matrix ' },
-    { image: '../assets/images/popular-07.jpg', title: 'Warface', genre: 'Max 3D' },
-    { image: '../assets/images/popular-08.jpg', title: 'Warcraft', genre: 'Legend' },
-  ];
+  import { ref, watch } from 'vue'
+  import { useRoute } from 'vue-router'
+  import { getStore } from '../backend/api.ts'
+  
+  const route = useRoute()
+
+  const loading = ref(false)
+  const stores = ref(null)
+  const error = ref(null)
+
+  watch(() => route.params.id, fetchData, { immediate: true })
+
+  async function fetchData(id) {
+    error.value = stores.value = null
+    loading.value = true
+    
+    try {
+      // replace `getPost` with your data fetching util / API wrapper
+      stores.value = await getStore()  
+      console.log(stores.value)
+    } catch (err) {
+      error.value = err.toString()
+    } finally {
+      loading.value = false
+    }
+  }
   </script>
   
   <style scoped>

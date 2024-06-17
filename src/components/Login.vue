@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { pb } from '../backend/createClient';
+import { pb } from '../backend/createClient.ts';
 
 export default {
   methods: {
