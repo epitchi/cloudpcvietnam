@@ -11,12 +11,12 @@
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Search End ***** -->
-            <div class="search-input">
+            <!-- <div class="search-input">
               <form id="search" action="#">
                 <input type="text" placeholder="Tìm kiếm" id="searchText" name="searchKeyword" @keypress="handleKeypress" />
                 <i class="fa fa-search"></i>
               </form>
-            </div>
+            </div> -->
             <!-- ***** Search End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
