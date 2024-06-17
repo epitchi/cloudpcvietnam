@@ -6,13 +6,13 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a class="logo">
-              <img src="../assets/images/logo.png" alt="Logo" />
+              <img src="../assets/images/logo2.png" alt="Logo" />
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Search End ***** -->
             <div class="search-input">
               <form id="search" action="#">
-                <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" @keypress="handleKeypress" />
+                <input type="text" placeholder="Tìm kiếm" id="searchText" name="searchKeyword" @keypress="handleKeypress" />
                 <i class="fa fa-search"></i>
               </form>
             </div>

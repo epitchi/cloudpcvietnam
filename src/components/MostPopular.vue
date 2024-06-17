@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="heading-section">
-            <h4><em>Most Popular</em> Right Now</h4>
+            <h4><em>Các tựa game</em> hỗ trợ </h4>
           </div>
           <div class="row">
             <div class="col-lg-3 col-sm-6" v-for="game in games" :key="game.title">
@@ -38,7 +38,7 @@
     { image: '../assets/images/popular-03.jpg', title: 'Dota2', genre: 'Steam-X' },
     { image: '../assets/images/popular-04.jpg', title: 'CS-GO', genre: 'Legendary' },
     { image: '../assets/images/popular-05.jpg', title: 'Mini Craft', genre: 'Legendary' },
-    { image: '../assets/images/popular-06.jpg', title: 'Eagles Fly', genre: 'Matrix Games' },
+    { image: '../assets/images/popular-06.jpg', title: 'Eagles Fly', genre: 'Matrix ' },
     { image: '../assets/images/popular-07.jpg', title: 'Warface', genre: 'Max 3D' },
     { image: '../assets/images/popular-08.jpg', title: 'Warcraft', genre: 'Legend' },
   ];
