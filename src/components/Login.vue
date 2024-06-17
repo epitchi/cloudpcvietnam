@@ -22,7 +22,7 @@ export default {
         const record = await pb.collection('users').getOne(id);
         console.log(record)
         // Redirect to profile page upon successful login
-        // this.$router.push('/profile');
+        this.$router.push('/');
       } catch (error) {
         console.error('Error logging in with Google:', error);
         // Handle error (e.g., show error message)
