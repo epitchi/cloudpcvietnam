@@ -14,7 +14,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-// const isLoading = ref(true)
+const isLoading = ref(false)
 
 onMounted(() => {
   window.addEventListener('load', () => {
