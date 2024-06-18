@@ -27,7 +27,7 @@
                             <h4>{{ user.username }}</h4>
                             <p>{{ user.email }}</p>
                             <div class="main-border-button">
-                              <a href="/payment">Đăng ký dịch vụ</a>
+                              <router-link to="/payment">Đăng ký dịch vụ</router-link>
                             </div>
                           </div>
                         </div>

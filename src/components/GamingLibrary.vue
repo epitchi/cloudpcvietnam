@@ -11,7 +11,9 @@
             <li><h4>Cloud Save</h4><span>{{ game.cloudsave ? "Hỗ trợ": "Không hỗ trợ" }}</span></li>
             <li><h4>Dung lượng</h4><span>{{ game.storage }}</span></li>
             <li><h4>{{ game.status }}</h4><span></span></li>
-            <li><div class="main-border-button border-no-active"><a href="/payment">Đăng ký ngay</a></div></li>
+            <li><div class="main-border-button border-no-active">
+              <router-link to="/payment">Đăng ký ngay</router-link>
+            </div></li>
           </ul>
         </div>
       </div>
