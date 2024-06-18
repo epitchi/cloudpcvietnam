@@ -1,4 +1,4 @@
-import { supabase } from "./createClient";
+import { pb, supabase } from "./createClient";
 
 export type Store = {
     id: Number,
@@ -17,4 +17,10 @@ export async function getStore(): Promise<Store[]>{
     }
 
     return data as Store[];
+}
+
+export function getUserProfile() {
+    const userData = pb.authStore.model;
+    console.log(userData)
+    return userData
 }
