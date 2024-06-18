@@ -20,8 +20,9 @@
             <!-- ***** Search End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><router-link to="/" exact>Home</router-link></li>
-              <li><router-link to="/browse" exact>Browse</router-link></li>
+              <li><router-link to="/" exact>Trang chủ</router-link></li>
+              <li><router-link to="/payment" exact>Đăng ký dịch vụ</router-link></li>
+              <!-- <li><router-link to="/browse" exact>Browse</router-link></li> -->
               <!-- <li><a href="details.html">Details</a></li>
               <li><a href="streams.html">Streams</a></li> -->
               <li>

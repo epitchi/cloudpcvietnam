@@ -41,6 +41,14 @@ export default {
   name: 'Home',
 };
 </script>
-<style>
-/* Add your global styles here */
+<style scoped>
+.container {
+  padding: 0 15px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0; /* Remove horizontal padding for small screens */
+  }
+}
 </style>

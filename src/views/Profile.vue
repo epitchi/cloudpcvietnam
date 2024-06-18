@@ -1,7 +1,11 @@
 <template>
-    <div>
-        <Preloader/>
+    <div id="profile">
+    <router-view>
+       
+      <Preloader/>
       <Header />
+    <main>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -116,35 +120,20 @@
           </div>
         </div>
       </div>
-  
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <p>
-                Copyright © 2036
-                <a href="#">Cyborg Gaming</a> Company. All rights reserved.
-                <br />
-                Design:
-                <a
-                  href="https://templatemo.com"
-                  target="_blank"
-                  title="free CSS templates"
-                  >TemplateMo</a
-                >
-                Distributed By
-                <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </main>
+    <Footer/>
+  </router-view>
     </div>
-  </template>
+</template>
   
-  <script>
+
+  <script setup>
   import Header from '../components/Header.vue';
-import Preloader from '../components/Preloader.vue';
+  import Footer from '../components/Footer.vue';
+  import Preloader from '../components/Preloader.vue';
+</script>
+
+<script>
   
   export default {
     name: 'Profile',

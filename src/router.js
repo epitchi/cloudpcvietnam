@@ -5,6 +5,7 @@ import Profile from './views/Profile.vue';
 import App from './App.vue';
 import Login from './components/Login.vue';
 import { pb } from './backend/createClient.ts';
+import Payment from './views/Payment.vue';
 // import Browse from './views/Browse.vue';
 // import Details from './views/Details.vue';
 // import Streams from './views/Streams.vue';
@@ -12,7 +13,8 @@ import { pb } from './backend/createClient.ts';
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/browse', name: 'Browse', component: Browse },
+  // { path: '/browse', name: 'Browse', component: Browse },
+  { path: '/payment', name: 'Payment', component: Payment},
   {
     path: '/profile',
     name: 'Profile',

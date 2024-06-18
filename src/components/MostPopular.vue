@@ -18,7 +18,7 @@
             </div>
             <div class="col-lg-12">
               <div class="main-button">
-                <a href="browse.html">Discover Popular</a>
+                <a>Xem thêm</a>
               </div>
             </div>
           </div>
